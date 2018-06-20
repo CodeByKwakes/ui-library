@@ -76,30 +76,6 @@ export class CollapseDirective implements OnInit {
 
     this.display = 'none';
     this.collapsed.emit(this);
-
-    /*  setTimeout(() => {
-     // this.height = '0';
-     // this.isCollapse = true;
-     // this.isCollapsing = false;
-     this.animation
-     .setFromStyles({
-     height: this._el.nativeElement.scrollHeight + 'px'
-     })
-     .setToStyles({
-     height: '0',
-     overflow: 'hidden'
-     });
-
-     this.animation.start(this._el.nativeElement)
-     .onComplete(() => {
-     if (this._el.nativeElement.offsetHeight === 0) {
-     this.display = 'none';
-     }
-
-     this.isCollapse = true;
-     this.isCollapsing = false;
-     });
-     }, 4);*/
   }
 
   public show(): void {
