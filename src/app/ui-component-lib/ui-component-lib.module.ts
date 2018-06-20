@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AccordionModule } from './accordion/accordion.module';
+import { CollapseDirective } from './directives/collapse.directive';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AccordionModule
   ],
-  declarations: []
+  declarations: [],
+  exports: [
+    AccordionModule
+  ]
 })
 export class UiComponentLibModule { }
