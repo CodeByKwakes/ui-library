@@ -9,12 +9,10 @@ import { AccordionPanelComponent } from '../accordion-group/accordion-group.comp
 export class AccordionComponent {
   @Input() closeOthers: boolean;
 
-
   @HostBinding('class.panel-group')
-  addClass: boolean = true;
+  addClass = true;
 
-
-  private groups: Array<AccordionPanelComponent> = [];
+  private groups: AccordionPanelComponent[] = [];
 
   closeOtherPanels(openGroup: AccordionPanelComponent): void {
     if (!this.closeOthers) {
