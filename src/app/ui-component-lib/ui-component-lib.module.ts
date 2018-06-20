@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccordionModule } from './accordion/accordion.module';
-import { CollapseDirective } from './directives/collapse.directive';
+import { AccordionModule } from './components/accordion/accordion.module';
 
 @NgModule({
   imports: [

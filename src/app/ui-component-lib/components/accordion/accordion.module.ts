@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccordionComponent } from './accordion/accordion.component';
 import { AccordionPanelComponent } from './accordion-group/accordion-group.component';
-import { CollapseDirective } from '../directives/collapse.directive';
+import { CollapseModule } from '../../directives/collapse/collapse.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    CollapseModule
   ],
-  declarations: [AccordionComponent, AccordionPanelComponent, CollapseDirective],
+  declarations: [AccordionComponent, AccordionPanelComponent],
   exports: [AccordionComponent, AccordionPanelComponent]
 })
 export class AccordionModule { }
